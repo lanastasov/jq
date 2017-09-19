@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>prependTo demo</title>
+  <style>
+  div {
+    background: yellow;
+  }
+  body {
+  	padding: 0px;
+  	margin: 0px;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="stylesheet" href="https://rawgit.com/Martz90/vivify/master/vivify.css">
+  <!-- <link rel="stylesheet" href="https://github.com/Martz90/vivify/blob/master/vivify.css"> -->
+  <!-- <link rel="stylesheet" href="src/vivify.css"> -->
+</head>
+<body>
+ 
+<div id="foo">FOO!</div>
+<div id="bar">I have something to say... </div>
+<span id="baz">We have something to say... </span>
+<!-- <img src="videocover.jpg" width="300" height="200" class="vivify duration-2500 spinIn"> -->
+ 
+<script>
+$( "span" ).prependTo( "#foo" );
+// $( "span" ).prepend( "#foo" );
+// $( "span" ).after( "#foo" );
+// $( "span" ).append( "#foo,<span>yuppi</span>" );
+// $( "span" ).appendTo( "#foo" );
+</script>
+ 
+</body>
+</html>
